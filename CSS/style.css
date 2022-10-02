@@ -1,0 +1,497 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*section header y navegacion*/
+
+.fondo{
+    background: rgb(52, 50, 50);;  
+}
+
+.bgColorGris{
+    background-color: rgb(52, 50, 50);;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  
+}
+
+#Conf{
+    font-size: 1.5rem;
+
+}
+
+.justificadofinal{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+/*section principal*/
+
+:root{
+    --primary: hsla(0, 0%, 0%, 0.5);
+    --secondary:hsla(0, 0%, 0%, 0.5);
+
+}
+.sectionPrincipal{
+    background-image: linear-gradient(135deg, var(--primary), var(--secondary)),
+                      url("../assets/images/BSASOCTUBRE.jpg");
+    height: 100vh;
+    width: 100%;
+    display: flex;                               
+    justify-content: flex-end;     
+    align-items: center;                       
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.contenidoPrincipal{
+    width: 60%;
+    text-align: right;
+    color: white;
+    padding-right: 100px;
+    font-size: 1.5rem;
+}
+
+
+h1{
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 100;
+}
+
+.botonquieroserOrador{
+    text-decoration: none;
+    font-family: 'Mukta Malar', sans-serif;;
+    color: white;
+    display: inline-block;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+    padding: 9px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+
+}
+
+.botonComprar{
+    text-decoration: none;
+    font-family: 'Mukta Malar', sans-serif;;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: rgb(3, 151, 3);
+}
+
+
+/*section tarjetas*/
+
+.sectionTarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 200%;
+    margin-bottom: 2vh;
+}
+
+.tituloConocealos{
+    font-family: 'Mukta Malar', sans-serif;;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.tituloOradores{
+    font-family: 'Mukta Malar', sans-serif;;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
+.PadredeTarjetas{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.TarjetasFlex{  
+    width: 80%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+.tarjeta{
+    background-color: white;
+    width: 30%;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 3px;
+}
+
+.tarjetaImagen{
+    width:100%;
+    border-radius: 3px;
+    margin-bottom: 0.5vh;
+}
+
+.tarjetaContenido{
+    padding: 1rem;
+}
+
+.JavaYReact{
+    display: flex;
+    align-items: flex-start;
+}
+
+.Javascript{
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(246, 189, 31);
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+    margin-right: 1vh;
+}
+
+.tamaño{
+    font-family: 'Mukta Malar', sans-serif;;
+    font-size: 0.8rem;
+    font-weight:bolder;
+    text-align: start;
+}
+
+.React{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(17, 150, 180);
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+}
+
+.Negocios{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(66, 66, 63);
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+    margin-right: 1vh;
+}
+
+.name{
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 400;
+    text-align: start;
+    font-size: 1.7rem;
+    margin-top: 1vh;
+}
+
+.tarjetaParrafo{
+    font-family: 'Mukta Malar', sans-serif; 
+    font-size: 1.2rem;;
+    width: 80%;
+    text-align: start;
+    margin-top: 8%;
+    padding-bottom: 1%;
+}
+
+.Startups{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(250, 63, 63);
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+
+}
+
+/* section pantalla dividida*/
+
+#lugarYFecha{
+    margin-bottom: 1vh;
+}
+
+.rowImagen{
+    height: 70vh;
+}
+
+.imagen{
+    background-image: linear-gradient(135deg, var(--primary), var(--secondary)),
+    url("../assets/images/FLORALIS.jpg");
+    background-size: cover;
+}
+
+.alto{
+    height: 100%;
+}
+
+.contenido{
+    padding: 2rem;
+    background-color:  #3e5886;;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 18vh;
+}
+
+.tituloBsasOctubre{
+    font-family: 'Mukta Malar', sans-serif;;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.parrafoBsasOctubre{
+    font-family: 'Mukta Malar', sans-serif;;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.botonConoceMas{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mukta Malar', sans-serif;;
+    display: inline-block;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+    padding: 9px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+
+/*section tabla horarios*/
+
+.tablemargin{
+     margin-top: 0;
+     margin-bottom: 0;
+     background-image: linear-gradient(135deg, var(--primary), var(--secondary)),
+             url("../assets/images/ba3.jpg");
+    background-size: cover;
+}
+
+.table{
+    color: white;
+    background-size: 100vh;
+}
+
+th{
+    color: rgb(196, 202, 244);
+    font-size: 1rem;
+}
+
+.sacarentradas{
+    color: white;
+    background-color: rgb(131, 204, 30);
+    background-size: 100vh;
+    padding: 1vh;
+    border-radius: 1vh; 
+    text-decoration: none;
+}
+
+
+/*section formulario contacto*/
+
+.fondoFormgeneral{
+    background-color: #d5ddf9;
+    background-size: cover;
+    border-radius: 1vh;
+    margin-top: 0 auto;
+    margin-bottom: 0.5vh;
+    padding-right: 1vh;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto
+}
+
+.tituloorador{
+    padding: 1vh;
+    padding-bottom: 0vh;
+    padding: auto;
+}
+
+.textoformulario{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fondoFormulario{
+    background-color: rgb(186, 197, 246);
+}
+
+.subrayarpuntos{
+    border-bottom:1px dotted #9999CC;
+}
+
+.ancho{
+    width: 50%;
+    margin: 0 auto;
+}
+        
+#enviarverde{
+    color: white;
+    background-color: rgb(131, 204, 30);
+}
+
+
+/*section footer*/
+
+.FooterGeneral {
+    background-color: #173a76;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.linkjuntos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+.linksFooter{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Mukta Malar', sans-serif;;
+    font-weight: 200;
+    padding: 5vh;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 900px) {
+    
+     /*section navegacion*/
+
+    .bgColorGris{
+        margin-left: 0vh;
+    }
+
+
+    /*sectionPrincipal*/
+
+    .sectionPrincipal{
+        justify-content: center;
+    }
+
+    .contenidoPrincipal{
+        width: 80%;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        padding: 20px;
+        font-size: 1rem;  
+    }
+
+    .parrafoPrincipal{
+        line-height: 1.5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 0,6rem;
+    }
+
+
+    /*section tarjetas*/
+
+    .TarjetasFlex{  
+       flex-direction: column;   
+    }
+
+    .tarjeta{ 
+        width: 90%;
+        margin-bottom: 1rem;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+ 
+
+  /*section dividida*/
+
+    .rowImagen{
+        height: 35%;
+    }
+
+    .alto{
+        height: 50vh;
+    }
+
+    .contenido{
+        font-size: 1.5rem;
+        padding-top: 7vh;
+    }
+
+    .tituloBsasOctubre{
+        font-size: 1.5rem;
+    }
+
+    .ParrafoBsasOctubre{
+        font-size: 1.2rem;
+    }
+    
+    .botonConoceMas{
+        font-size: 1.2rem;;
+    }
+       
+
+    /*section formulario*/
+
+    .textoformulario{
+        margin-left: 7vh;
+        margin-right: 7vh;
+        margin-top: 0vh
+    }
+
+    .ancho{
+        width: 80%;
+    }
+
+    /*section footer*/
+
+    .FooterGeneral{
+        justify-content: center;
+        padding-right: 45vh;
+        padding-left: 0vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        margin-left: auto;
+    }
+
+    .linkjuntos{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 45vh;  
+    }
+
+    .linksFooter{
+        font-size: 0.55rem;
+        padding-bottom: 2rem;
+        padding: 1vh;
+    }
+
+
+}

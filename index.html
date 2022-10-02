@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>proyecto html</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <script src="./JS/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./CSS/style.css">
+
+        
+    </head> 
+    <body>
+
+      <!--Section header y navegacion -->
+
+      <header class="container-fluid fondo">
+        <nav class="navbar navbar-expand-lg navbar-light bgColorGris">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white"  id="Conf" href="#">
+              <img src="./assets/images/codoacodo.png" alt="Logo de codo a codo" loading="lazy" width="120">
+              Conf. Bs. As.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificadofinal">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white active" aria-current="page" href="#">La Conferencia</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link text-muted" href="#oradores">Los oradores</a></li>
+                    <li class="nav-item"> <a class="nav-link text-muted" href="#lugarYFecha">El lugar y fecha</a></li>
+                    <li class="nav-item"> <a class="nav-link text-muted" href="#formulario">Conviértete en orador</a></li>
+                    <li class="nav-item"> <a class="nav-link text-success" href="./pages/comprartickets.html">Comprar tickets</a></li>
+
+               
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+      </header>
+
+       <!--Section principal -->
+
+       <main>
+        <section class="sectionPrincipal">
+            <div class="contenidoPrincipal">
+                <h1>Conferencia Bs. As.</h1>
+                <p class="parrafoPrincipal">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p><br><br>
+                <a  class="botonquieroserOrador" href="./pages/contacto.html">Quiero ser orador</a>
+                <a class="botonComprar" href="./pages/comprartickets.html">Comprar tickets</a>
+
+            </div>
+        </section>
+       </main>
+      
+
+       <!--Section tarjetas -->
+
+      <section class="sectionTarjetas" id="oradores">
+          <div>
+               <h2 class="tituloConocealos">CONOCE A LOS</h2>
+               <h3 class="tituloOradores">ORADORES</h3>
+          </div>
+          <div class="PadredeTarjetas">
+            <div class="TarjetasFlex">
+                <div class="tarjeta" >
+                  <img class="tarjetaImagen" src="./assets/images/steve.jpg"  alt="imagen de Steve Jobs" loading="lazy"  width="300">
+                  <div  class="tarjetaContenido">
+                    <div class="JavaYReact">
+                      <h2 class="Javascript tamaño">JavaScript</h2>
+                      <h2 class="React tamaño">React</h2>
+                    </div>
+                    <h3 class="name">Steve Jobs</h3>
+                    <div class="tarjetaParrafo">
+                      <p>Steve Paul Jobs es un destacado informático y empresario estadounidense. Creador del primer ordenador personal y fundador de Apple Computer, una empresa innovadora en el sector de la informática.</p>
+                    </div>
+           
+                  </div>
+                 
+                </div>
+          
+                <div class="tarjeta">
+                  <img class="tarjetaImagen" src="./assets/images/bill.jpg"  alt="imagen de Bill Gates" loading="lazy"  width="300"> 
+                  <div class="tarjetaContenido">
+                    <div class="JavaYReact">
+                      <h2 class="Javascript tamaño">JavaScript</h2>
+                      <h2 class="React tamaño">React</h2>
+                    </div>
+                    <h3 class="name">Bill Gates</h3>
+                    <div class="tarjetaParrafo">
+                      <p>William Henry Gates III es un empresario, informático y filántropo estadounidense, conocido por haber creado y fundado junto con Paul Allen, la empresa Microsoft. De igual forma es conocido por haber creado, también con Paul Allen, el sistema operativo para computadoras Windows.</p>
+                    </div>
+
+                  </div>
+
+                </div>
+        
+                <div class="tarjeta">
+                  <img class="tarjetaImagen" src="./assets/images/ada.jpeg" alt="imagen de Ada Lovelace" loading="lazy" width="300">
+                  <div class="tarjetaContenido">
+                    <div class="JavaYReact">
+                      <h2 class="Negocios tamaño">Negocios</h2>
+                      <h2 class="Startups tamaño">Startups</h2>
+                    </div>
+                    <h3 class="name">Ada Lovelace</h3>
+                  <div class="tarjetaParrafo">
+                    <p>Ada Lovelace es la primera programadora de la historia. Matemática y escritora inglesa. Revolucionó la ciencia con sus conocimientos matemáticos, creando lo que hoy se conoce como el primer algoritmo pensado para ser procesado por una máquina. De ahí que se la considera la primera programadora de computadoras.</p>
+                  </div>  
+
+                  </div>
+                </div>
+              </div>
+    
+        </section>
+       
+
+        <!--Section pantalla dividida -->
+
+        <section class="container-fluid" id="lugarYFecha"> 
+            <div class="row rowImagen col align-self-start">
+                <div class="col-sm-12 col-lg-6 imagen alto">
+
+                </div>
+                <div class="col-sm-12 col-lg-6 contenido alto">
+                  <h3 class="tituloBsasOctubre">Bs. As. - Octubre</h3>
+                  <p class="ParrafoBsasOctubre">El evento se realizará el día Sábado 2 de Octubre en el Hotel Panamericano de Buenos Aires, a las 12hs.</p>
+                  <a class="botonConoceMas" href="">Conocé más</a>
+                </div>
+
+            </div>
+        </section>
+
+
+      <!--Section tabla de horarios -->
+
+        <section class="tablemargin">
+ 
+             <table class="table">
+               <thead>
+                <tr>
+                   <th>Orador</th>
+                   <th>Día</th>
+                   <th>Horario</th>
+            
+               </tr>
+              </thead>
+              <tbody>
+                <tr>
+                   <td>Steve Jobs</td>
+                   <td>Lun.y Mie.</td>
+                   <td>18:30hs a 20:00hs</td>
+                </tr>
+                <tr>
+                   <td>Bill Gates</td>
+                   <td>Mar. y jue.</td>
+                   <td>18:30hs a 20:00hs</td>
+                </tr>
+                <tr>
+                 <td>Ada Lovelace</td>
+                 <td>Lun.y Mie.</td>
+                 <td>10:00hs a 11:30hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3"> <a  class="sacarentradas" href="./pages/comprartickets.html"> Sacar entradas</a> </td>
+                </tr>
+              </tfoot>
+           
+            </table>
+        </section>
+
+
+  <!--Section formulario de contacto-->
+
+  <section id="formulario" class="container">
+  
+    <div class="fondoFormgeneral">
+          <div class="tituloorador">
+                  <h2 class="tituloConocealos">CONVIÉRTETE EN UN </h2>
+                  <h3 class="tituloOradores">ORADOR</h3> 
+          </div>
+          <div>
+                <p class="textoformulario">Anótate como orador para dar una <span class="subrayarpuntos">charla ignite</span>. Cuéntanos de qué quieres hablar!</p> 
+          </div>
+          <div class="row ancho">
+                <div class=" col mb-3 d-flex">
+                    <input type="text" class="form-control fondoFormulario"  id="NombreFormulario" placeholder="Nombre" autofocus>
+                    <input type="text" class="form-control fondoFormulario"  id="ApellidoFormulario" placeholder="Apellido">
+               </div>
+          </div>
+          <div class="row ancho">
+                 <div class="col mb-3">
+                      <textarea name=""  class="form-control fondoFormulario" id="HablarSobreFormulario" cols="36" rows="10" placeholder="Sobre qué quieres hablar"></textarea>
+                      <p>Recuerda incluir un título para tu charla</p>
+                 </div>
+           </div>
+
+           <div class="row ancho">
+                  <div class="col mb-3">
+                       <input type="submit" class="form-control" id="enviarverde" cols="36" rows="10" value="Enviar">
+                  </div>
+            </div>
+    </div>
+  
+  </section>
+
+
+   <!--Section footer -->
+
+    <footer class="FooterGeneral">
+      <div class="linkjuntos">
+        <a class="linksFooter"href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+        <a class="linksFooter"href="./pages/contacto.html">Contáctanos</a>
+        <a class="linksFooter"href="./pages/prensa.html">Prensa</a>
+        <a class="linksFooter"href="./pages/conferencias.html">Conferencias</a>
+        <a class="linksFooter"href="./pages/terminosycondiciones.html">Términos y condiciones</a>
+        <a class="linksFooter"href="./pages/privacidad.html">Privacidad</a>
+        <a class="linksFooter"href="./pages/estudiantes.html">Estudiantes</a>
+      </div>
+    </footer>
+
+    </body>
+ </html>
