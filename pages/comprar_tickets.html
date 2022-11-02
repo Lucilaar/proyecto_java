@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprar Tickets</title>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head> 
+
+<body>
+
+<!--SECCION NAVEGADOR TICKETS-->
+
+    <header class="container-fluid fondo">
+        <nav class="navbar navbar-expand-lg navbar-light bgColorGris">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white"  id="Conf" href="#">
+              Conf. Bs. As.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificadofinal">
+                    <li class="nav-item">
+                    <a class="nav-link active text-muted active" aria-current="page" href="../index.html">La Conferencia</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link text-muted" href="./los_oradores.html">Los oradores</a></li>
+                    <li class="nav-item"> <a class="nav-link text-muted" href="./lugaryfecha.html">El lugar y fecha</a></li>
+                    <li class="nav-item"> <a class="nav-link text-white href="../index.html">Conviértete en orador</a></li>
+                    <li class="nav-item"> <a class="nav-link text-success" href="#">Comprar Tickets</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+
+<!--SECCION TARJETAS TICKETS-->
+
+    <section class="sectionTarjetas margenTarjetas" id="oradores">
+        
+        <div class="PadredeTarjetas">
+          <div class="TarjetasFlex">
+
+              <div class="bordestarjeta" >
+              
+                <div class="tarjetaContenidoTickets">
+                  <h3 class="titulotickets fondoAzul">Estudiante</h3>
+                  <div class="tarjetaParrafoTickets">
+                    <p>Tienen un descuento</p>
+                    <h3 class="titulotickets">80%</h3>
+                    <p>* presentar documentación</p>
+                  </div>
+                </div>
+               
+              </div>
+        
+              <div class="bordestarjeta bordeVerde">
+               
+                <div class="tarjetaContenidoTickets">
+                  <h3 class="titulotickets fondoCeleste">Trainee</h3>
+                  <div class="tarjetaParrafoTickets">
+                    <p>Tienen un descuento</p>
+                    <h3 class="titulotickets">50%</h3>
+                    <p>* presentar documentación</p>
+                  </div>
+                </div>
+
+              </div>
+      
+              <div class="bordestarjeta bordeAmarillo">
+    
+                <div class="tarjetaContenidoTickets">
+                  <h3 class="titulotickets fondoAmarillo" >Junior</h3>
+                <div class="tarjetaParrafoTickets">
+                  <p>Tienen un descuento</p>
+                  <h3 class="titulotickets">15%</h3>
+                  <p>* presentar documentación</p>
+                </div>  
+
+                </div>
+              </div>
+            </div>
+      </section>
+
+
+<!--SECCION FORMULARIO TICKETS-->
+    
+       
+        <section id="formulario" class="container">
+          
+  
+                <div>
+                      <div class="tituloorador margen">
+                              <h2 class="tituloConocealos">VENTA </h2>
+                              <h3 class="tituloOradores">VALOR DE TICKET $200</h3> 
+                      </div>
+
+                   <form action="">
+                           <div class="row anchoNombreYapellidoTickets">
+                                 <div class=" col mb-3 d-flex">
+                                     <input type="text" class="form-control"  id="NombreFormularioTickets" placeholder="Nombre" required>
+                                     <input type="text" class="form-control"  id="ApellidoFormularioTickets" placeholder="Apellido" required>
+                                </div>
+                           </div>
+
+                           <div class="mb-3 anchoCorreo">
+                             <input type="email" class="form-control" placeholder="Correo" aria-Label="Email" id="mail" required>
+                           </div>
+
+
+                        <div class=" col mb-3 d-flex anchoCantidadYcategoria">
+                           <div class="col-md-6" id="Cantidad">
+                             <label for="cantidadTickets" class="form-label">Cantidad</label>
+                             <input type="text" class="form-control" id="cantidadTickets" placeholder="cantidad" required>
+                           </div>
+
+                           <div class="col-md-6">
+                               <label for="categoriaSelect" class="form-label CategoriaTitulo">Categoria</label>
+                               <select class="form-select" id="categoriaSelect" aria-label="Default select example">
+                                 <option selected value="0">Estudiante</option>
+                                 <option value="1">Trainee</option>
+                                 <option value="2">Junior</option>
+                                 <option value="3">Sin categoria</option>
+                               </select>
+                           </div>  
+                       </div>
+
+                       <div class="alert alert-primary mt-2 mb-4 anchoCorreo" role="alert">
+                          Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                       </div>
+
+                       <div class="row gx-2 tamañoBorrarResumen">
+                           <div class="col-md mb-3 fondoVerde margenVerdeBorrar">
+                                 <button type="reset" class="w-100 btn btn-lg btn-form" id="btnBorrar">Borrar</button>
+                           </div>
+                           <div class="col-md mb-3 fondoVerde margenVerdeResumen">
+                                 <button type="button" class="w-100 btn btn-lg btn-form" id="btnResumen">Resumen</button>
+                           </div>
+                       </div>
+
+                     </div>
+
+                  </form>
+
+                </div>
+        </section>
+
+
+
+<!--SECCION FOOTER TICKETS-->
+
+      <footer class="FooterGeneralTickets">
+        <div class="linkjuntos">
+          <a class="linksFooter"href="./preguntasfrecuentes.html">Preguntas frecuentes</a>
+          <a class="linksFooter"href="./contacto.html">Contáctanos</a>
+          <a class="linksFooter"href="./prensa.html">Prensa</a>
+          <a class="linksFooter"href="./conferencias.html">Conferencias</a>
+          <a class="linksFooter"href="./terminosycondiciones.html">Términos y condiciones</a>
+          <a class="linksFooter"href="./privacidad.html">Privacidad</a>
+          <a class="linksFooter"href="./estudiantes.html">Estudiantes</a>
+        </div>
+      </footer>
+     
+ <script src="../JS/bootstrap.bundle.min.js"></script>  
+ <script src="../JS/comprar-tickets.js"></script>
+</body>
+</html>
