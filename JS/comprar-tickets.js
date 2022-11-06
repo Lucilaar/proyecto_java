@@ -83,9 +83,32 @@ function TotalAPpagar() {
     }
 
 
-let totalValorTickets = (cantidadTickets.value) * totalValorTickets;
+let totalValorTickets = (cantidadTickets.value) * valorTicket;
+    if (categoria.value == 0) {
+    totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
+    }
+    if (categoria.value == 1) {
+    totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
+    }
+    if (categoria.value == 2) {
+    totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
+    }
+    if (categoria.value == 3) {
+    totalValorTickets = totalValorTickets ;
+    }
          
-        switch (totalValorTickets){
+
+    totalPago.innerHTML = totalValorTickets;
+
+}
+
+btnResumen.addEventListener('click', TotalAPpagar);
+btnBorrar.addEventListener('click', ResetTotalAPagar);
+
+    /*
+
+
+    switch (totalValorTickets){
             case "0": 
                 totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
                 break;
@@ -97,28 +120,8 @@ let totalValorTickets = (cantidadTickets.value) * totalValorTickets;
                 break;
             case "3": 
                totalValorTickets = totalValorTickets;
+            break;
         }
-
-    totalPago.innerHTML = totalValorTickets;
-
-}
-
-btnResumen.addEventListener('click', TotalAPpagar);
-btnBorrar.addEventListener('click', ResetTotalAPagar);
-
-    /*
-    if (categoria.value == 0) {
-        totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
-    }
-    if (categoria.value == 1) {
-        totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
-    }
-    if (categoria.value == 2) {
-        totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
-    }
-    if (categoria.value == 3) {
-        totalValorTickets = totalValorTickets ;
-    }
     */
 
 
